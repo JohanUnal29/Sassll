@@ -1,0 +1,7 @@
+@mixin carrusel_informativo($height, $bgColor, $textColor,$tex-align) {
+    height: $height;
+    background-color: $bgColor;
+    color: $textColor;
+    text-align: $tex-align;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

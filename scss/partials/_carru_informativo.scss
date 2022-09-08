@@ -1,0 +1,3 @@
+.carrusel_info{
+    @include carrusel_informativo($height: 30px, $bgColor: black, $textColor: white,$tex-align: center);
+}

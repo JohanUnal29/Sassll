@@ -1,0 +1,46 @@
+
+.fuente{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .fondo-nav {
+      background-color: white;
+      justify-content: space-between;
+   
+  }
+  
+  .logotipo{
+    width: 100px;
+    height: 100px; 
+  }
+  
+  /*hecho con maps*/
+  .menu-horizontal{
+        li {
+          .horizonte_a {
+            display: block;
+            padding: 8px;
+            color: map-get($links, linksHeaderColor);
+            text-decoration: none;
+            transition: all 0.5s ease;
+            &:hover {
+              color:  map-get($links, linksHeaderColorHover);
+              font-size: 18px;
+            }
+          }
+        }
+    }
+  
+  .menu-vertical{
+      color: black; 
+  
+      &:hover{
+        transition: all 0.5s ease;
+        background-color:  map-get($links, linksHeaderColorHover);    
+        color: white; 
+      }
+        
+  
+      
+  }
+  
