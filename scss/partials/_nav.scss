@@ -33,14 +33,32 @@
   
   .menu-vertical{
       color: black; 
-  
+
       &:hover{
         transition: all 0.5s ease;
         background-color:  map-get($links, linksHeaderColorHover);    
         color: white; 
+
       }
         
   
       
+  }
+
+  @media (max-width: 550px) {  
+
+    .menu-vertical{
+      color: black; 
+      font-size: 14px;
+
+      &:hover{
+        transition: all 0.5s ease;
+        background-color:  map-get($links, linksHeaderColorHover);    
+        color: white; 
+
+      }
+              
+  }
+
   }
   
