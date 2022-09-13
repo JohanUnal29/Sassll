@@ -42,12 +42,17 @@
   color: white;
 }
 
-.carrusel_info {
-  height: 30px;
-  background-color: black;
+.anuncioP h1 {
   color: white;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.anuncioP P {
+  color: white;
+}
+.anuncioP a {
+  transition: all 0.5s ease;
+}
+.anuncioP a:hover {
+  font-size: 24px;
 }
 
 .anuncioP h1 {
