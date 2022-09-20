@@ -1,0 +1,24 @@
+
+
+.tarjeta{
+    @extend %tarjetas; 
+}
+
+.info_productos{
+    @extend %info_productos;
+}
+
+.precio_productos{
+    @extend %precio_productos;
+}
+
+.texto_productos{
+    @extend %texto_productos;
+    
+        transition: all 0.5s ease;
+        &:hover{
+            font-size: 18px;
+            font-weight: 600;
+            color: #1B8459;
+        }
+}
