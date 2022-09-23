@@ -95,6 +95,69 @@
   color: white;
 }
 
+.menu-horizontal2 li .horizonte_a2 {
+  display: block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.menu-horizontal2 li .horizonte_a2:hover {
+  color: #b4ddea;
+  font-size: 18px;
+}
+
+.menu-vertical2 {
+  color: black;
+}
+.menu-vertical2:hover {
+  transition: all 0.5s ease;
+  background-color: #b4ddea;
+  color: white;
+}
+
+.menu-horizontal3 li .horizonte_a3 {
+  display: block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.menu-horizontal3 li .horizonte_a3:hover {
+  color: #96e28e;
+  font-size: 18px;
+}
+
+.menu-vertical3 {
+  color: black;
+}
+.menu-vertical3:hover {
+  transition: all 0.5s ease;
+  background-color: #96e28e;
+  color: white;
+}
+
+.menu-horizontal4 li .horizonte_a4 {
+  display: block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.menu-horizontal4 li .horizonte_a4:hover {
+  color: #eab4b6;
+  font-size: 18px;
+}
+
+.menu-vertical4 {
+  color: black;
+}
+.menu-vertical4:hover {
+  transition: all 0.5s ease;
+  background-color: #eab4b6;
+  color: white;
+}
+
 .anuncioP h1 {
   color: white;
 }

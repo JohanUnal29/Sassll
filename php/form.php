@@ -23,7 +23,7 @@ $asunto = "Este mail fue enviado desde la pagina Daseinjoyeria.com";
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location: ../pages/agradecimiento.html");
+header("Location: ../index.html");
 
 ?>
 

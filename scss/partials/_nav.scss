@@ -45,4 +45,83 @@
       
   }
 
-  
+  .menu-horizontal2{
+    li {
+      .horizonte_a2{
+        display: block;
+        padding: 8px;
+        color: map-get($links, linksHeaderColor);
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:hover {
+          color:  map-get($links, linksHeaderColorHover2);
+          font-size: 18px;
+        }
+      }
+    }
+}
+
+.menu-vertical2{
+  color: black; 
+
+  &:hover{
+    transition: all 0.5s ease;
+    background-color:  map-get($links, linksHeaderColorHover2);    
+    color: white; 
+
+  }  
+}
+
+  .menu-horizontal3{
+    li {
+      .horizonte_a3{
+        display: block;
+        padding: 8px;
+        color: map-get($links, linksHeaderColor);
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:hover {
+          color:  map-get($links, linksHeaderColorHover3);
+          font-size: 18px;
+        }
+      }
+    }
+}
+
+.menu-vertical3{
+  color: black; 
+
+  &:hover{
+    transition: all 0.5s ease;
+    background-color:  map-get($links, linksHeaderColorHover3);    
+    color: white; 
+
+  }  
+}
+
+.menu-horizontal4{
+  li {
+    .horizonte_a4{
+      display: block;
+      padding: 8px;
+      color: map-get($links, linksHeaderColor);
+      text-decoration: none;
+      transition: all 0.5s ease;
+      &:hover {
+        color:  map-get($links, linksHeaderColorHover4);
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.menu-vertical4{
+color: black; 
+
+&:hover{
+  transition: all 0.5s ease;
+  background-color:  map-get($links, linksHeaderColorHover4);    
+  color: white; 
+
+}  
+}
