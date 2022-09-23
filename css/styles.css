@@ -34,6 +34,24 @@
   justify-content: center;
 }
 
+.texto_publicitario2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #b4ddea;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.texto_publicitario3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #96e28e;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 .titulo_formulario {
   display: flex;
   text-align: center;
@@ -136,6 +154,30 @@
   }
   to {
     margin-left: 0%;
+    width: 100%;
+  }
+}
+.texto_publicitario2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.texto_publicitario3 a {
+  color: black;
+}
+
+.slider3 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%;
+  }
+  to {
+    margin-top: 0%;
     width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -23,3 +23,39 @@
       width: 100%;
     }
   }
+
+  .texto_publicitario2{
+    @extend %texto_publicitario2;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+
+  .texto_publicitario3{
+    @extend %texto_publicitario3;
+    a{
+       
+        color: black;
+    }
+}
+
+
+.slider3 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }

@@ -30,7 +30,7 @@
 
 
 
-      <header class="container-fluid fondo-nav">
+      <header class="container-fluid fondo-nav sticky-top">
 
         <div class="row col-13 carrusel_info">
           <div id="carouselExampleSlidesOnly" class="carousel slide centrado" data-bs-ride="carousel">
@@ -53,7 +53,7 @@
 
           <nav class="navbar navbar-expand-lg fondo-nav">
             <div class="container-fluid">
-              <a class="navbar-brand col-8">
+              <a class="navbar-brand col-8"> 
                 <img class="logotipo" src="https://drive.google.com/uc?export=download&id=1tBsb0t3bUc1vG8BzvAs0wuCOBos_2_fa" alt="Logo de Dasein"/>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,10 +82,96 @@
           </nav>
         </div>
     </header>
-       
-        <main class="container">
     
-        </main>
+    <div class="container">
+      
+      <div class="row slider3">
+      
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 texto_publicitario2">
+            <br>
+            <h5>Nueva colección de accesorios</h5>
+            <br>
+            <h2>Nosotros te asesoramos para esa ocasión especial</h2>
+            <br>
+            <button type="button" class="btn btn-dark"><a class="Pregunta" href="https://wa.me/message/FKO3LZ4ELRU4E1" target="_blank">Escribemos con confianza</a></button>
+            <br>
+
+        </div>
+      </div>     
+
+      <br>  
+
+    </div> 
+
+
+    <main class="container">
+          
+      <form action="../php/form.php" method="POST" class="row g-3">
+
+        <div class="titulo_formulario">
+          <h4>SUSCRÍBETE YA Y OBTÉN</h4>
+        </div>
+
+        <div class="titulo_formulario">
+          <h6>Ofertas exclusivas, información sobre lo más nuevo en accesorios y tips de estilo</h6>
+        </div>
+
+        <div class="col-6">
+          <br>
+          <label for="inputNombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputNombre" name="nombre" placeholder="Nombre">
+        </div>
+
+        <div class="col-6">
+          <br>
+          <label for="inputApellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputApellido" name="apellido" placeholder="Apellido">
+        </div>
+
+        <div class="col-12">
+          <label for="emailInput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailInput" name="email" placeholder="Escrbe tu email">
+        </div> 
+
+        <div class="col-12">
+          <label for="inputNúmero" class="form-label">Número de telefono/whatsapp</label>
+          <input type="text" class="form-control" id="inputNúmero" name="numero" placeholder="Número">
+        </div>            
+
+        <div class="col-12">
+          <label for="inputDirección" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputDirección" name="direccion" placeholder="Dirección">
+        </div>
+
+        <div class="col-12">
+          <label for="inputPaís" class="form-label">País</label>
+          <input type="text" class="form-control" id="inputPaís" name="pais" placeholder="País">
+        </div>
+
+        <div class="col-6">
+          <label for="inputCiudad" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCiudad" name="ciudad" placeholder="Ciudad">
+        </div>
+
+        <div class="col-6">
+          <label for="inputDepartamento" class="form-label">Departamento</label>
+          <input type="text" class="form-control" id="inputDepartamento" name="departamento" placeholder="Departamento">
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input type="checkbox" id="checkTerms" class="form-check-input">
+            <label for="checkTerms" class="form-check-label">Acepto los terminos y condiciones del tratamiento de datos</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-dark">¡SÍ, QUIERO SUSCRIBIRME!</button>               
+        </div>
+
+      </form>
+
+    </main>
 
         <div class="container col-12">
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
