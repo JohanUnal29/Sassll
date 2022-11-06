@@ -61,7 +61,6 @@ function eliminar(POS){
    
 }
 
-console.log(BBDD)
 
 let entrada = prompt("Bienvenido al carrito de compras \n 1-Consultar características del producto \n 2-Ingresar al carrito \n 3-Eliminar producto \n 4-Consultar total \n 5-salir");
 
