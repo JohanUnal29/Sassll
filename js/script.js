@@ -73,7 +73,7 @@ while(entrada != "5" ){
             console.log(resultado);
             break;
        case "2":
-            let agregarProducto = Number(prompt("elige los productos que quieres agregar: \n 0- Aretes de corazón: 18000 COP \n 1- Cadena en acero: 20000 COP \n 2- Earcops: 12000 COP"));
+            let agregarProducto = Number(prompt("elige los productos que quieres agregar: \n 0- Aretes: 18000 COP \n 1- Cadena: 20000 COP \n 2- Earcops: 12000 COP"));
             comprarDinamico(agregarProducto);
             break;
         case "3":
