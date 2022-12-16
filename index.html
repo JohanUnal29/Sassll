@@ -12,6 +12,8 @@
         <link rel="icon" href="https://drive.google.com/uc?export=download&id=1tBsb0t3bUc1vG8BzvAs0wuCOBos_2_fa">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+        
         <title>Dasein</title>
     </head>
     <body class="fuente">
@@ -127,7 +129,7 @@
         </div>
 
 
-        <main class="container">
+        <main class="container ">
 
           <div class="jumbotron anuncioP">
             <h1 class="display-4">Celebra amor y amistad con Dasein</h1>
@@ -140,12 +142,28 @@
           </div>
 
 
-           <div id="contenedor-productos" class="contenedor-productos">
-                <!-- Esto se va a rellenar con JS -->
-           </div>
-          
-        </main>  
+           
+           
          
+
+        </main>  
+
+          <div class="slide-container swiper">
+            <div id="Products" class="slide-content">
+                <div id="cotenedorProductos" class="card-wrapper swiper-wrapper">
+                    
+                    
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+        
+    
+
         <div class="modal-derecha" id="modal-derecha">
           
             
@@ -190,7 +208,8 @@
             </ul>
           </footer>
         </div>
-
+        
+        <script src="./js/swiper-bundle.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script src="./js/main.js"></script>

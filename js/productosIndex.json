@@ -1,9 +1,22 @@
 [
-    { "id": "aretes-01", "titulo": "Aretes te amo", "imagen": "https://drive.google.com/uc?export=download&id=1sLq1wrcdQOyMss63scJLlPyFrNn-juG4", 
+    { "id": "aretes-01", "titulo": "Aretes te amo", "descripcion":"Elegante, versatil", "imagen": "https://drive.google.com/uc?export=download&id=1sLq1wrcdQOyMss63scJLlPyFrNn-juG4", 
     "categoria": {
         "titulo": "Aretes",
         "id": "Aretes"
-    },"precio": 20000}
+    },"precio": 20000}, { "id": "anillos-01", "titulo": "Anillos te amo", "descripcion":"Romántico", "imagen": "https://drive.google.com/uc?export=download&id=1s25W80IELahTTIQgsTLyI-nPPSgzMVeP", 
+    "categoria": {
+        "titulo": "Anillos",
+        "id": "Anillos"
+    },"precio": 25000}, { "id": "cadenas-01", "titulo": "Cadena corazón", "descripcion":"segura y poderosa", "imagen": "https://drive.google.com/uc?export=download&id=1sVkU5wp9DiE6MQmcBIXBFdfb3jCXL4Bf", 
+    "categoria": {
+        "titulo": "Cadenas",
+        "id": "Cadenas"
+    },"precio": 35000}, { "id": "sets-01", "titulo": "Set cadena corazón", "descripcion":"Con tu nombre grabado", "imagen": "https://drive.google.com/uc?export=download&id=1t4sTsFTDb2qLFISybr4YUtbu6y5ak0nH", 
+    "categoria": {
+        "titulo": "Sets",
+        "id": "Sets"
+    },"precio": 35000}
+    
 ]
 
 

@@ -1,6 +1,6 @@
 
 
-const contenedorProductos = document.querySelector("#contenedor-productos");
+const contenedorProductos = document.querySelector("#cotenedorProductos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
@@ -18,16 +18,29 @@ function cargarProductos(productosElegidos) {
     productosElegidos.forEach(producto => {
 
         const div = document.createElement("div");
-        div.classList.add("producto");
+        div.classList.add("card");
+        div.classList.add("swiper-slide");
+        
         div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
-            <div class="producto-detalles">
-                <h3 class="producto-titulo">${producto.titulo}</h3>
-                <p class="producto-precio">$${producto.precio}</p>
-                <button class="producto-agregar" id="${producto.id}">Agregar</button>
-            </div>
-        `; 
+          
+        
+        <div class="image-content">
+            <span class="overlay"></span>
 
+            <div class="card-image">
+                <img src="${producto.imagen}" alt="${producto.titulo}" class="card-img">
+            </div>
+        </div>
+
+        <div class="card-content">
+            <h2 class="name">${producto.titulo}</h2>
+            <p class="description">${producto.descripcion}</p>
+            <button class="button producto-agregar" id="${producto.id}">Agregar</button>
+            
+        </div>    
+            
+    
+        `; 
         contenedorProductos.append(div);
     })
 
@@ -41,7 +54,7 @@ const pedirProductos = (res) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             res === true ? resolve(productos) : reject("No se puedo conectar a la base de datos");
-        }, 1000);
+        }, 100);
     })
 }
     
@@ -117,17 +130,19 @@ const botonModalDerecha = document.querySelector("#boton-modal-derecha");
 const modalDerecha = document.querySelector("#modal-derecha");
 const cerrarModalDerecha = document.querySelector("#cerrar-modal-derecha");
 const BorrarNext = document.getElementById('Next');
-
+const contenedorGrande = document.querySelector("#Products");
 
 
 botonModalDerecha.addEventListener("click", () => {
     modalDerecha.classList.add("active");
     BorrarNext.classList.add("active");
+    contenedorGrande.classList.add("disabled");
 }) 
 
 cerrarModalDerecha.addEventListener("click", () => {
     modalDerecha.classList.remove("active");
     BorrarNext.classList.remove("active");
+    contenedorGrande.classList.remove("disabled");
     location.reload();
 })
 
@@ -139,6 +154,7 @@ productosEnCarrito2 = JSON.parse(productosEnCarrito2);
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoProductos = document.querySelector("#carrito-productos");
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
+
 
 let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
@@ -152,6 +168,7 @@ function cargarProductosCarrito() {
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
         contenedorCarritoAcciones.classList.remove("disabled");
+        
         
     
         contenedorCarritoProductos.innerHTML = "";
@@ -181,6 +198,7 @@ function cargarProductosCarrito() {
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
         contenedorCarritoAcciones.classList.add("disabled");
+        
         
     }
 
@@ -299,3 +317,34 @@ function comprarCarrito() {
     
     
 }
+
+var swiper = new Swiper(".slide-content", {
+    
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
